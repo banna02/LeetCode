@@ -37,4 +37,3 @@ function arrayToList(arr: number[]): ListNode | null {
 //var x = maxProfit_GPT([7,1,5,3,6,4]);
 var x = isAnagram("anagram", "nagaram");
 console.log(x);
-
