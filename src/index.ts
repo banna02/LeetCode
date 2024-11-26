@@ -10,6 +10,8 @@ import { maxProfit, maxProfit_GPT } from './maxProfit';
 import { isPalindromeString } from './isPalindromeString';
 import { isAnagram } from './isAnagram';
 import { floodFill } from './floodFill';
+import { canConstruct } from './ransomNote';
+import { containsDuplicate } from './containsDuplicate';	
 //var x  = isPalindrome(121)
 //var y = isPalindrome_GPT(121)
 
@@ -39,5 +41,10 @@ function arrayToList(arr: number[]): ListNode | null {
 //var x = isAnagram("anagram", "nagaram");
 
 //var x = floodFill([[1,1,1],[1,1,0],[1,0,1]], 1, 1, 2);
-var x = floodFill([[0,0,0],[0,0,0]], 0, 0,0);
+//var x = floodFill([[0,0,0],[0,0,0]], 0, 0,0);
+
+//var x = canConstruct("aa", "aab");
+
+var x = containsDuplicate([1,2,3,4]);
 console.log(x);
+
