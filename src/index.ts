@@ -12,6 +12,10 @@ import { isAnagram } from './isAnagram';
 import { floodFill } from './floodFill';
 import { canConstruct } from './ransomNote';
 import { containsDuplicate } from './containsDuplicate';	
+import {search} from './binarySearch';
+import { majorityElement } from './majorityElement';
+import { maxSubArray } from './maximumSubarray';
+import { coinChange } from './coinChange';
 //var x  = isPalindrome(121)
 //var y = isPalindrome_GPT(121)
 
@@ -45,6 +49,14 @@ function arrayToList(arr: number[]): ListNode | null {
 
 //var x = canConstruct("aa", "aab");
 
-var x = containsDuplicate([1,2,3,4]);
+//var x = containsDuplicate([1,2,3,4]);
+
+//var x = search([-1,0,3,5,9,12], 9);
+
+//var x = majorityElement([1,2,3,4, 4,5]);
+
+//var x = maxSubArray([-2,1,-3,4,-1,2,1,-5,4]);
+
+var x = coinChange([1,2,5], 11);
 console.log(x);
 
