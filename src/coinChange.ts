@@ -17,5 +17,17 @@ export function coinChange(coins: number[], amount: number): number {
 
         return -1;
     };
-
 };
+
+export function coinChangeGPT(coins: number[], amount: number): number {
+    const dp = Array(amount + 1).fill(Infinity);
+    dp[0] = 0;
+
+    for (let coin of coins) {
+        for (let x = coin; x <= amount; x++) {
+            dp[x] = Math.min(dp[x], dp[x - coin] + 1);
+        }
+    }
+
+    return dp[amount] === Infinity ? -1 : dp[amount];
+}
